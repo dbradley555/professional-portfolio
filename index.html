@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Bradley's Portfolio</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="page-title">Daniel Bradley</h1>
+    </header>
+    <div class="navbar">
+      <a href="#page-about">About Me</a>
+      <a href="#contact-me">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Projects
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#project-1">Project 1</a>
+          <a href="#project-2">Project 2</a>
+          <a href="#project-3">Project 3</a>
+          <a href="#project-4">Project 4</a>
+          <a href="#project-5">Project 5</a>
+          <a href="#project-6">Project 6</a>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="page-about" id="page-about">
+        <h2 class="page-about">About Me</h2>
+        <p>This is the about me section idk what to write here yet.</p>
+      </section>
+      <section class="project-cards" id="project-cards">
+        <section class="row justify-center">
+          <div class="card-column">
+            <figure class="img-card">
+              <h2 class="card-header" id="project-1">Project 1</h2>
+              <div class="card-body">
+                <p>Project Description</p>
+              </div>
+              <img src="" alt="Preview image of Project 1" class="img-block" />
+            </figure>
+          </div>
+          <div class="card-column">
+            <figure class="img-card">
+              <h2 class="card-header" id="project-2">Project 2</h2>
+              <div class="card-body">
+                <p>Project Description</p>
+              </div>
+              <img src="" alt="Preview image of Project 2" class="img-block" />
+            </figure>
+          </div>
+
+          <div class="card-column">
+            <figure class="img-card">
+              <h2 class="card-header" id="project-3">Project 3</h2>
+              <div class="card-body">
+                <p>Project Description</p>
+              </div>
+              <img src="" alt="Preview image of Project 3" class="img-block" />
+            </figure>
+          </div>
+          <div class="card-column">
+            <figure class="img-card">
+              <h2 class="card-header" id="project-4">Project 4</h2>
+              <div class="card-body">
+                <p>Project Description</p>
+              </div>
+              <img src="" alt="Preview image of Project 4" class="img-block" />
+            </figure>
+          </div>
+          <div class="card-column">
+            <figure class="img-card">
+              <h2 class="card-header" id="project-5">Project 5</h2>
+              <div class="card-body">
+                <p>Project Description</p>
+              </div>
+              <img src="" alt="Preview image of Project 5" class="img-block" />
+            </figure>
+          </div>
+
+          <div class="card-column">
+            <figure class="img-card">
+              <h2 class="card-header" id="project-6">Project 6</h2>
+              <div class="card-body">
+                <p>Project Description</p>
+              </div>
+              <img src="" alt="Preview image of Project 6" class="img-block" />
+            </figure>
+          </div>
+        </section>
+      </section>
+      <section class="contact-me" id="contact-me">
+        <div class="container">
+          <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="email-address">Email Address</label>
+            <input
+              type="email"
+              id="email-address"
+              name="email-address"
+              placeholder="Your email address.."
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h3>&copy Daniel Bradley 2022</h3>
+    </footer>
+  </body>
+</html>
