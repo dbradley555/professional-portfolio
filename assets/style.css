@@ -28,6 +28,17 @@ body {
   color: var(--lavender);
   background-color: var(--heather);
 }
+.main-photo {
+  max-width: 200px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.project-cards {
+  clear: both;
+}
 
 h1,
 h2,
