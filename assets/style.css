@@ -113,26 +113,26 @@ footer {
   transition: flex-basis 500ms linear;
   margin-bottom: 1.5rem;
 }
-
+/* .card-display {
+  display: none;
+  transition: all 0.5s ease-in-out;
+} */
 /* make each img card a flexbox column to align and justify content within it */
-.img-card {
+.card-display {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   min-height: 100%;
   padding: 2rem;
   color: var(--heliotrope);
-
-  /* outline is like border, but on the outside of the box instead of inside */
   outline: 2px dashed var(--gin);
   outline-offset: -2px;
-  transition: all 0.5s ease-in-out;
 }
 
 .img-card .card-header {
   /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
   position: relative;
-  margin: -4rem 0 1.5rem 0;
+  margin: -1rem 2rem -1.5rem 2rem;
   padding: 0.5rem 1rem;
   background-color: var(--outer-space);
   color: var(--heliotrope);
@@ -142,7 +142,6 @@ footer {
 }
 
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
-.img-card:hover,
 .img-card:hover .card-header {
   box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
 }
@@ -167,6 +166,7 @@ footer {
   );
   display: flex;
   align-items: center;
+  max-width: 100%;
 }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
@@ -312,4 +312,20 @@ input[type='submit']:hover {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
