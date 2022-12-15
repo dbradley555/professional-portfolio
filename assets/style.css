@@ -1,15 +1,15 @@
 /* color scheme sourced from http://khroma.co/generator/ */
 :root {
-  --outer-space: #33393f;
-  --bright-turquoise: #2aefcb;
-  --gin: #e0eae4;
-  --heliotrope: #ffff;
+  --heather: #afc3cb;
+  --lavender: #b482ba;
+  --jacarta: #39265b;
+  --mntnmeadow: #14a296;
 }
 
 /* set content highlight color and background */
 ::selection {
-  background-color: var(--bright-turquoise);
-  color: var(--outer-space);
+  background-color: var(--mntnmeadow);
+  color: var(--heather);
 }
 
 html {
@@ -25,8 +25,8 @@ body {
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
   font-size: 1.75rem;
   line-height: 1.5;
-  color: var(--gin);
-  background-color: var(--outer-space);
+  color: var(--lavender);
+  background-color: var(--heather);
 }
 
 h1,
@@ -36,7 +36,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.625rem;
-  color: var(--heliotrope);
+  color: var(--jacarta);
   font-weight: 700;
   line-height: 1.1;
 }
@@ -70,6 +70,9 @@ p {
   margin-bottom: 1rem;
 }
 
+.page-about p {
+  color: var(--jacarta);
+}
 header {
   width: 96%;
   margin: 0 auto;
@@ -124,8 +127,8 @@ footer {
   justify-content: flex-start;
   min-height: 100%;
   padding: 2rem;
-  color: var(--heliotrope);
-  outline: 2px dashed var(--gin);
+  color: var(--jacarta);
+  outline: 2px dashed var(--lavender);
   outline-offset: -2px;
 }
 
@@ -134,16 +137,16 @@ footer {
   position: relative;
   margin: -1rem 2rem -1.5rem 2rem;
   padding: 0.5rem 1rem;
-  background-color: var(--outer-space);
-  color: var(--heliotrope);
-  border: 2px solid var(--gin);
+  background-color: var(--heather);
+  color: var(--jacarta);
+  border: 2px solid var(--lavender);
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
 }
 
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
 .img-card:hover .card-header {
-  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+  box-shadow: inset 0px 0px 8px var(--jacarta), 0 0 15px var(--jacarta);
 }
 
 /* each card's img block grows to the height of the largest img block on the page, making each card even in height */
@@ -157,13 +160,10 @@ footer {
   overflow: auto;
   tab-size: 4;
   padding: 1.2rem 1rem;
-  color: var(--gin);
+  color: var(--lavender);
   border-radius: 8px;
   /* use linear-gradient() function to create a fading background  */
-  background-image: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0%,
-    rgba(232, 102, 236, 0.6) 100%
-  );
+  background-image: linear-gradient(var(--lavender) 0%, var(--jacarta) 100%);
   display: flex;
   align-items: center;
   max-width: 100%;
@@ -201,7 +201,7 @@ select,
 textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
+  border: 1px solid var(--lavender); /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -213,7 +213,7 @@ input[type='email'],
 textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
+  border: 1px solid var(--lavender); /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -223,7 +223,7 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type='submit'] {
-  background-color: #04aa6d;
+  background-color: var(--jacarta);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -233,13 +233,13 @@ input[type='submit'] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type='submit']:hover {
-  background-color: #45a049;
+  background-color: var(--lavender);
 }
 
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: var(--heather);
   padding: 20px;
 }
 
@@ -281,7 +281,7 @@ input[type='submit']:hover {
 /* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: var(--jacarta);
 }
 
 /* Dropdown content (hidden by default) */
@@ -297,7 +297,7 @@ input[type='submit']:hover {
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: black;
+  color: var(--jacarta);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
