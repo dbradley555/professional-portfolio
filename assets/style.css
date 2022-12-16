@@ -1,3 +1,4 @@
+/* Global Styles */
 /* color scheme sourced from http://khroma.co/generator/ */
 :root {
   --heather: #afc3cb;
@@ -28,18 +29,25 @@ body {
   color: var(--lavender);
   background-color: var(--heather);
 }
-.main-photo {
-  max-width: 200px;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-top: 5px;
+
+/* Removing underline from all links */
+a:link {
+  text-decoration: none;
 }
 
-.project-cards {
-  clear: both;
+a:visited {
+  text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* Header Styles */
 h1,
 h2,
 h3,
@@ -80,10 +88,6 @@ h6 {
 p {
   margin-bottom: 1rem;
 }
-
-.page-about p {
-  color: var(--jacarta);
-}
 header {
   width: 96%;
   margin: 0 auto;
@@ -96,163 +100,13 @@ header h1.page-title {
   font-size: 4.5rem;
 }
 
+/* Main Body Styling */
 main {
   width: 96%;
   margin: 2rem auto;
 }
 
-footer {
-  margin: 1.5rem;
-  text-align: center;
-}
-
-/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-/* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
-.card-column {
-  flex: 1 0 100%;
-  padding: 1.5rem;
-  /* when the screen resizes, make it so our columns don't jump in size */
-  transition: flex-basis 500ms linear;
-  margin-bottom: 1.5rem;
-}
-/* .card-display {
-  display: none;
-  transition: all 0.5s ease-in-out;
-} */
-/* make each img card a flexbox column to align and justify content within it */
-.card-display {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 100%;
-  padding: 2rem;
-  color: var(--jacarta);
-  outline: 2px dashed var(--lavender);
-  outline-offset: -2px;
-}
-
-.img-card .card-header {
-  /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
-  position: relative;
-  margin: -1rem 2rem -1.5rem 2rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--heather);
-  color: var(--jacarta);
-  border: 2px solid var(--lavender);
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-
-/* set an outer and inner drop shadow on the card to create a glowing effect on hover */
-.img-card:hover .card-header {
-  box-shadow: inset 0px 0px 8px var(--jacarta), 0 0 15px var(--jacarta);
-}
-
-/* each card's img block grows to the height of the largest img block on the page, making each card even in height */
-.img-card .img-block {
-  flex-grow: 1;
-}
-
-.img-card img {
-  /* set styles to make it so img wraps in <pre> instead of overflowing */
-  white-space: pre-wrap;
-  overflow: auto;
-  tab-size: 4;
-  padding: 1.2rem 1rem;
-  color: var(--lavender);
-  border-radius: 8px;
-  /* use linear-gradient() function to create a fading background  */
-  background-image: linear-gradient(var(--lavender) 0%, var(--jacarta) 100%);
-  display: flex;
-  align-items: center;
-  max-width: 100%;
-}
-
-/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 768px) {
-  /* on tablets, set columns to only be 50% of the width and not grow */
-  .card-column {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  /* select the last child to grow to full width if it has space to grow */
-  .card-column:last-child {
-    flex-grow: 1;
-  }
-}
-
-/* media query for larger screens */
-@media screen and (min-width: 992px) {
-  header {
-    width: 75%;
-  }
-
-  .card-column {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-  }
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type='text'],
-select,
-textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid var(--lavender); /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-input[type='email'],
-textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid var(--lavender); /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type='submit'] {
-  background-color: var(--jacarta);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type='submit']:hover {
-  background-color: var(--lavender);
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: var(--heather);
-  padding: 20px;
-}
+/* NavBar Styling */
 
 /* Navbar container */
 .navbar {
@@ -325,18 +179,174 @@ input[type='submit']:hover {
   display: block;
 }
 
-a:link {
-  text-decoration: none;
+/* About Me Section Styling */
+.main-photo {
+  max-width: 200px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
-a:visited {
-  text-decoration: none;
+.page-about p {
+  color: var(--jacarta);
 }
 
-a:hover {
-  text-decoration: none;
+/* Project Card Styling */
+/* Clear float from about me section */
+.project-cards {
+  clear: both;
 }
 
-a:active {
-  text-decoration: none;
+/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+.card-column {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
+/* make each img card a flexbox column to align and justify content within it */
+.card-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 2rem;
+  color: var(--jacarta);
+  outline: 2px dashed var(--lavender);
+  outline-offset: -2px;
+}
+
+.img-card .card-header {
+  /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+  position: relative;
+  margin: -1rem 2rem -1.5rem 2rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--heather);
+  color: var(--jacarta);
+  border: 2px solid var(--lavender);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+.img-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px var(--jacarta), 0 0 15px var(--jacarta);
+}
+
+/* each card's img block grows to the height of the largest img block on the page, making each card even in height */
+.img-card .img-block {
+  flex-grow: 1;
+}
+
+.img-card img {
+  /* set styles to make it so img wraps in <pre> instead of overflowing */
+  white-space: pre-wrap;
+  overflow: auto;
+  tab-size: 4;
+  padding: 1.2rem 1rem;
+  color: var(--lavender);
+  border-radius: 8px;
+  /* use linear-gradient() function to create a fading background  */
+  background-image: linear-gradient(var(--lavender) 0%, var(--jacarta) 100%);
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+/* Contact Me Form Styling */
+/* Style inputs with type="text", select elements and textareas */
+input[type='text'],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid var(--lavender); /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type='email'],
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid var(--lavender); /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type='submit'] {
+  background-color: var(--jacarta);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type='submit']:hover {
+  background-color: var(--lavender);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: var(--heather);
+  padding: 20px;
+}
+
+/* Footer Styling */
+footer {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+/* Sizing styling */
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
 }
