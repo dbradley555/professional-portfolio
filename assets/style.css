@@ -109,27 +109,27 @@ main {
 /* NavBar Styling */
 
 /* Navbar container */
-.navbar {
+/* .navbar {
   overflow: hidden;
   background-color: #333;
   font-family: Arial;
-}
+} */
 
 /* Links inside the navbar */
-.navbar a {
+/* .navbar a {
   float: left;
   font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
+} */
 
 /* The dropdown container */
-.dropdown {
+/* .dropdown {
   float: left;
   overflow: hidden;
-}
+} */
 
 /* Dropdown button */
 .dropdown .dropbtn {
@@ -144,40 +144,40 @@ main {
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover,
+/* .navbar a:hover,
 .dropdown:hover .dropbtn {
   background-color: var(--jacarta);
-}
+} */
 
 /* Dropdown content (hidden by default) */
-.dropdown-content {
+/* .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-}
+} */
 
 /* Links inside the dropdown */
-.dropdown-content a {
+/* .dropdown-content a {
   float: none;
   color: var(--jacarta);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
-}
+} */
 
 /* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
+/* .dropdown-content a:hover {
   background-color: #ddd;
-}
+} */
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
   display: block;
-}
+} */
 
 /* About Me Section Styling */
 .main-photo {
@@ -220,6 +220,26 @@ main {
   margin-bottom: 1.5rem;
 }
 
+/* project card initial display set to none */
+/* #project-1-card {
+  display: none;
+  transition: display 500ms ease-in;
+}
+#project-2-card {
+  display: none;
+}
+#project-3-card {
+  display: none;
+}
+#project-4-card {
+  display: none;
+}
+#project-5-card {
+  display: none;
+}
+#project-6-card {
+  display: none;
+} */
 /* make each img card a flexbox column to align and justify content within it */
 .card-display {
   display: flex;
@@ -247,6 +267,22 @@ main {
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
 .img-card:hover .card-header {
   box-shadow: inset 0px 0px 8px var(--jacarta), 0 0 15px var(--jacarta);
+}
+/* add a plus sign after the project title to indicate to the user that you can click */
+.img-card .card-header::after {
+  content: '+';
+  color: var(--lavender);
+  opacity: 30%;
+  display: block;
+  margin-bottom: -10px;
+  float: right;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-card:hover .card-header::after {
+  color: var(--jacarta);
+  opacity: 100%;
 }
 
 /* each card's img block grows to the height of the largest img block on the page, making each card even in height */
@@ -349,4 +385,54 @@ footer {
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
+}
+
+/* Dropdown Button */
+.dropbtn2 {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn2:hover,
+.dropbtn2:focus {
+  background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-card {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-card a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-card a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
 }

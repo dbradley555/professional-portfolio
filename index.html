@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -35,6 +36,9 @@
           <i class="fa-solid fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
+          <a href="https://dbradley555.github.io/culture-cruncher/"
+            >Culture Cruncher</a
+          >
           <a href="https://dbradley555.github.io/loan-calculator/"
             >Loan Calculator</a
           >
@@ -71,61 +75,73 @@
         <section class="row justify-center">
           <div class="card-column">
             <figure class="img-card">
-              <h2 class="card-header" id="project-1">Loan Calculator</h2>
+              <h2 class="card-header" id="project-2">Culture Cruncher</h2>
+              <div id="project-2-card">
+                <div class="card-display">
+                  <div class="card-body">
+                    <p>
+                      This application is designed to inform users about
+                      cultures and cuisines of different countries. This will
+                      help users that are interested in traveling to a specfic
+                      destination (or need help picking a destination), increase
+                      their knowledge of some key facts about the culture of a
+                      country, such as popular food, language, currency, etc.
+                      The application uses the REST Countries and YouTube APIs
+                      to display information and a video about a user inputted
+                      (or random) country. This project was created as a Group
+                      Project in the UT Coding Bootcamp.
+                    </p>
 
-              <div class="card-display">
-                <div class="card-body">
-                  <p>
-                    This project is a simple Loan Calculator. It takes three
-                    inputs: Loan Amount, Interest, and Number of Years To Repay.
-                    It will return your Monthly Payment, Total Payment, and
-                    Total Interest. This project was created as part of the
-                    Traversy Media: "Modern JavaScript From The Beginning"
-                    course on Udemy.
-                  </p>
-
-                  <p>Click on the Preview below to visit!</p>
+                    <p>Click on the Preview below to visit!</p>
+                  </div>
+                  <a href="https://dbradley555.github.io/culture-cruncher/">
+                    <img
+                      src="./assets/img/Culture Cruncher.png"
+                      alt="Preview image of Culture Cruncher"
+                      class="img-block"
+                    />
+                  </a>
+                  <a href="https://github.com/dbradley555/culture-cruncher"
+                    >Take Me to the REPO!</a
+                  >
                 </div>
-                <a href="https://dbradley555.github.io/loan-calculator/">
-                  <img
-                    src="./assets/img/Loan Calculator IMG.png"
-                    alt="Preview image of Loan Calculator"
-                    class="img-block"
-                  />
-                </a>
-                <a href="https://github.com/dbradley555/loan-calculator"
-                  >Take Me to the REPO!</a
-                >
               </div>
             </figure>
           </div>
           <div class="card-column">
             <figure class="img-card">
-              <h2 class="card-header" id="project-2">Calorie Tracker</h2>
+              <div class="dropdown2">
+                <button onclick="myFunction()" class="dropbtn2">
+                  Loan Calculator
+                </button>
+                <div id="myDropdown2" class="dropdown-card">
+                  <div id="project-1-card">
+                    <div class="card-display">
+                      <div class="card-body">
+                        <p>
+                          This project is a simple Loan Calculator. It takes
+                          three inputs: Loan Amount, Interest, and Number of
+                          Years To Repay. It will return your Monthly Payment,
+                          Total Payment, and Total Interest. This project was
+                          created as part of the Traversy Media: "Modern
+                          JavaScript From The Beginning" course on Udemy.
+                        </p>
 
-              <div class="card-display">
-                <div class="card-body">
-                  <p>
-                    This project is a simple Calorie Tracker. Type in either
-                    your Meal or Food Item, the number of calories, and click
-                    Add Meal! The Total Calories will keep track of your calorie
-                    intake. This project was created as part of the Traversy
-                    Media: "Modern JavaScript From The Beginning" course on
-                    Udemy.
-                  </p>
-
-                  <p>Click on the Preview below to visit!</p>
+                        <p>Click on the Preview below to visit!</p>
+                      </div>
+                      <a href="https://dbradley555.github.io/loan-calculator/">
+                        <img
+                          src="./assets/img/Loan Calculator IMG.png"
+                          alt="Preview image of Loan Calculator"
+                          class="img-block"
+                        />
+                      </a>
+                      <a href="https://github.com/dbradley555/loan-calculator"
+                        >Take Me to the REPO!</a
+                      >
+                    </div>
+                  </div>
                 </div>
-                <a href="https://dbradley555.github.io/calorie-tracker/">
-                  <img
-                    src="./assets/img/Calorie Tracker IMG.png"
-                    alt="Preview image of Calorie Tracker"
-                    class="img-block"
-                  />
-                </a>
-                <a href="https://github.com/dbradley555/calorie-tracker"
-                  >Take Me to the REPO!</a
-                >
               </div>
             </figure>
           </div>
@@ -133,87 +149,93 @@
           <div class="card-column">
             <figure class="img-card">
               <h2 class="card-header" id="project-3">Book List</h2>
-              <div class="card-display">
-                <div class="card-body">
-                  <p>
-                    This project is a simple Book List creator. The page will
-                    take your input of the Book Title, Author, and ISBN number
-                    and create a list of books that you've either read or want
-                    to read! This project was created as part of the Traversy
-                    Media: "Modern JavaScript From The Beginning" course on
-                    Udemy.
-                  </p>
+              <div id="project-3-card">
+                <div class="card-display">
+                  <div class="card-body">
+                    <p>
+                      This project is a simple Book List creator. The page will
+                      take your input of the Book Title, Author, and ISBN number
+                      and create a list of books that you've either read or want
+                      to read! This project was created as part of the Traversy
+                      Media: "Modern JavaScript From The Beginning" course on
+                      Udemy.
+                    </p>
 
-                  <p>Click on the Preview below to visit!</p>
+                    <p>Click on the Preview below to visit!</p>
+                  </div>
+                  <a href="https://dbradley555.github.io/book-list/">
+                    <img
+                      src="./assets/img/Book List IMG.png"
+                      alt="Preview image of Book List"
+                      class="img-block"
+                    />
+                  </a>
+                  <a href="https://github.com/dbradley555/book-list"
+                    >Take Me to the REPO!</a
+                  >
                 </div>
-                <a href="https://dbradley555.github.io/book-list/">
-                  <img
-                    src="./assets/img/Book List IMG.png"
-                    alt="Preview image of Book List"
-                    class="img-block"
-                  />
-                </a>
-                <a href="https://github.com/dbradley555/book-list"
-                  >Take Me to the REPO!</a
-                >
               </div>
             </figure>
           </div>
           <div class="card-column">
             <figure class="img-card">
               <h2 class="card-header" id="project-4">Task List</h2>
-              <div class="card-display">
-                <div class="card-body">
-                  <p>
-                    This project is a simple Task List creator. Whether you need
-                    to do chores or shop for grocery items, this list will take
-                    your task input, create a list, and allow you to filter
-                    through them! This project was created as part of the
-                    Traversy Media: "Modern JavaScript From The Beginning"
-                    course on Udemy.
-                  </p>
+              <div id="project-4-card">
+                <div class="card-display">
+                  <div class="card-body">
+                    <p>
+                      This project is a simple Task List creator. Whether you
+                      need to do chores or shop for grocery items, this list
+                      will take your task input, create a list, and allow you to
+                      filter through them! This project was created as part of
+                      the Traversy Media: "Modern JavaScript From The Beginning"
+                      course on Udemy.
+                    </p>
 
-                  <p>Click on the Preview below to visit!</p>
+                    <p>Click on the Preview below to visit!</p>
+                  </div>
+                  <a href="https://dbradley555.github.io/task-list/">
+                    <img
+                      src="./assets/img/Task List IMG.png"
+                      alt="Preview image of Task List"
+                      class="img-block"
+                    />
+                  </a>
+                  <a href="https://github.com/dbradley555/task-list"
+                    >Take Me to the REPO!</a
+                  >
                 </div>
-                <a href="https://dbradley555.github.io/task-list/">
-                  <img
-                    src="./assets/img/Task List IMG.png"
-                    alt="Preview image of Task List"
-                    class="img-block"
-                  />
-                </a>
-                <a href="https://github.com/dbradley555/task-list"
-                  >Take Me to the REPO!</a
-                >
               </div>
             </figure>
           </div>
           <div class="card-column">
             <figure class="img-card">
               <h2 class="card-header" id="project-5">Form Validation</h2>
-              <div class="card-display">
-                <div class="card-body">
-                  <p>
-                    This project is a simple information submission form. It is
-                    taking your Name, Zipcode, Email, and Phone number, all with
-                    validation to make sure that you are entering in the correct
-                    format! This project was created as part of the Traversy
-                    Media: "Modern JavaScript From The Beginning" course on
-                    Udemy.
-                  </p>
+              <div id="project-5-card">
+                <div class="card-display">
+                  <div class="card-body">
+                    <p>
+                      This project is a simple information submission form. It
+                      is taking your Name, Zipcode, Email, and Phone number, all
+                      with validation to make sure that you are entering in the
+                      correct format! This project was created as part of the
+                      Traversy Media: "Modern JavaScript From The Beginning"
+                      course on Udemy.
+                    </p>
 
-                  <p>Click on the Preview below to visit!</p>
+                    <p>Click on the Preview below to visit!</p>
+                  </div>
+                  <a href="https://dbradley555.github.io/form-validation/">
+                    <img
+                      src="./assets/img/Form Validation IMG.png"
+                      alt="Preview image of Form Validation"
+                      class="img-block"
+                    />
+                  </a>
+                  <a href="https://github.com/dbradley555/form-validation"
+                    >Take Me to the REPO!</a
+                  >
                 </div>
-                <a href="https://dbradley555.github.io/form-validation/">
-                  <img
-                    src="./assets/img/Form Validation IMG.png"
-                    alt="Preview image of Form Validation"
-                    class="img-block"
-                  />
-                </a>
-                <a href="https://github.com/dbradley555/form-validation"
-                  >Take Me to the REPO!</a
-                >
               </div>
             </figure>
           </div>
@@ -221,29 +243,31 @@
           <div class="card-column">
             <figure class="img-card">
               <h2 class="card-header" id="project-6">Weather</h2>
-              <div class="card-display">
-                <div class="card-body">
-                  <p>
-                    This project is a Weather page that will let you choose your
-                    location and give you the weather! It provides the
-                    Temperature, Relative Humidity, DewPoint, Wind, and "Feels
-                    Like" Temperature. This project was created as part of the
-                    Traversy Media: "Modern JavaScript From The Beginning"
-                    course on Udemy.
-                  </p>
+              <div id="project-6-card">
+                <div class="card-display">
+                  <div class="card-body">
+                    <p>
+                      This project is a Weather page that will let you choose
+                      your location and give you the weather! It provides the
+                      Temperature, Relative Humidity, DewPoint, Wind, and "Feels
+                      Like" Temperature. This project was created as part of the
+                      Traversy Media: "Modern JavaScript From The Beginning"
+                      course on Udemy.
+                    </p>
 
-                  <p>Click on the Preview below to visit!</p>
+                    <p>Click on the Preview below to visit!</p>
+                  </div>
+                  <a href="https://dbradley555.github.io/weather/">
+                    <img
+                      src="./assets/img/Weather IMG.png"
+                      alt="Preview image of Weather"
+                      class="img-block"
+                    />
+                  </a>
+                  <a href="https://github.com/dbradley555/weather"
+                    >Take Me to the REPO!</a
+                  >
                 </div>
-                <a href="https://dbradley555.github.io/weather/">
-                  <img
-                    src="./assets/img/Weather IMG.png"
-                    alt="Preview image of Weather"
-                    class="img-block"
-                  />
-                </a>
-                <a href="https://github.com/dbradley555/weather"
-                  >Take Me to the REPO!</a
-                >
               </div>
             </figure>
           </div>
@@ -295,5 +319,5 @@
       <h3>&copy Daniel Bradley 2022</h3>
     </footer>
   </body>
-  <script src="script.js"></script>
+  <script src="./assets/script.js"></script>
 </html>
