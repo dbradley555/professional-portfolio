@@ -5,8 +5,6 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
-const UTaustinlogo = require("./assets/images/UTaustinlogo.png");
-
 // Splash Screen
 
 const splashScreen = {
@@ -115,7 +113,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "The University of Texas at Austin",
-      logo: UTaustinlogo,
+      logo: require("./assets/images/UTaustinlogo.png"),
       subHeader: "Full Stack Software Engineering Bootcamp",
       duration: "November 2022 - May 2023",
       desc: "Earned a certificate in full stack web development",
@@ -128,7 +126,7 @@ const educationInfo = {
     },
     {
       schoolName: "The University of Texas at Austin",
-      logo: UTaustinlogo,
+      logo: require("./assets/images/UTaustinlogo.png"),
       subHeader: "Bachelor of Arts in Economics",
       duration: "August 2014 - December 2017",
       desc: "Minors:",
