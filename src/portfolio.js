@@ -202,7 +202,7 @@ const openSource = {
 const bigProjects = {
   title: "Big Projects",
   subtitle:
-    "Major Projects done collaboratively in the UT Austin Coding Bootcamp",
+    "Major Projects done collaboratively in the UT Austin Coding Bootcamp.",
   projects: [
     {
       image: require("./assets/images/Thingamabobs.png"),
@@ -358,7 +358,7 @@ const talkSection = {
 
 const podcastSection = {
   title: emoji("Podcasts to Listen to 🎙️"),
-  subtitle: "I LOVE TO LISTEN TO PODCASTS ABOUT THINGS I FIND INTERESTING",
+  subtitle: "I love listening to podcasts on topics I'm passionate about.",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
@@ -409,7 +409,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Want to discuss a project or just want to say hi? My inbox is always open.",
   number: "(832) 454-4373",
   email_address: "dbradley5555@gmail.com"
 };
