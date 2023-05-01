@@ -4,7 +4,7 @@
 
 ## Description
 
-This application creates and manages a database in MongoDB that contains the framework for a social networking application.
+This application is a professional portfolio for Daniel Bradley using several technologies including React.
 
 ## Table of Contents
 
