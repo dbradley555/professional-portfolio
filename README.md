@@ -6,6 +6,8 @@
 
 This application is a professional portfolio for Daniel Bradley using several technologies including React.
 
+![Preview Image](src/assets/images/preview%20image.png)
+
 ## Table of Contents
 
 - [Installation](#installation)
