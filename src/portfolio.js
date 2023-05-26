@@ -205,6 +205,22 @@ const bigProjects = {
     "Major Projects done collaboratively in the UT Austin Coding Bootcamp.",
   projects: [
     {
+      image: require("./assets/images/momart.png"),
+      projectName: "MoMart",
+      projectDesc:
+        "This application was a continuation project from Thingamabobs, but using React instead of Handlebars. This resulted in a more dynamice website using the React framework. It added a cart feature, payment functionality, and overall a significantly better user experience. This was also a Group Project in the UT Coding Bootcamp.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://momart.herokuapp.com/"
+        },
+        {
+          name: "Visit Repository",
+          url: "https://github.com/romanjamess/MoMart"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/Thingamabobs.png"),
       projectName: "Thingamabobs",
       projectDesc:
