@@ -23,10 +23,10 @@ const greeting = {
   username: "Daniel Bradley",
   title: "Hi, I'm Daniel",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 with a background in Retail Management and Economics. Trained at The University of Texas coding boot camp and earned a certificate in full stack web development with a preferential focus on back-end engineering. Dedicated and innovative with a passion for problem-solving and design. I'm an avid golfer and a hardcore fan of all things golf."
+    "Dedicated and results-driven professional with six years of experience in operations, management, and sales leadership. Armed with a bachelor's in Economics, minor in Math, and a program certificate in Full Stack Software Development, I bring a unique blend of analytical prowess and technical skills. Proven track record in optimizing operational efficiency and leveraging technology to enhance business processes. Eager to contribute my versatile skill set to a dynamic and challenging role. I'm an avid golfer and a hardcore fan of all things golf."
   ),
   resumeLink:
-    "https://docs.google.com/document/d/1ieri_DJTZXFapDEWcrFsI1KYx2Iwo1yxkW-Ztso0t80/edit?usp=sharing", // Set to empty to hide the button
+    "https://docs.google.com/document/d/1V5kPBheByWWM38mI-DeI7dD6etDNfNgtb8i-hEOI0NU/edit?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -162,16 +162,16 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Golf Sales Manager / Equipment Lead",
+      role: "Operations Manager",
       company: "Golf Galaxy / Dick's Sporting Goods",
       companylogo: require("./assets/images/gg_navy-logo_stacked.jpg"),
       date: "May 2018 – Present",
       desc: "",
       descBullets: [
-        "Select, on-board, empower, and develop a highly effective team of individuals",
-        "Manage the sales performance of the equipment, service, and apparel departments to meet sales and margin goals",
-        "Define a clear vision and strategy to communicate expectations to teammates",
-        "Hold associates accountable for meeting established operational guidelines, brand standards, customer service expectations, and company policies"
+        "Increased Sales by 7%, Increased Custom Penetration KPI by 6%, Increased NPS & OSAT KPIs by 10%, Increased Contribution to Budget KPI by 3%, Improved Fulfillment Capacity & Efficiency by 8%.",
+        "Manage teammates assigned to the Operational Departments (i.e., Front End, Freight and Operations) and have a dotted line responsibility for managing associates in other areas of the store when serving as Head Coach. Hold teammates accountable for meeting established operational guidelines, brand standards, customer service expectations and company policies. Work closely with teammates to identify capabilities and readiness for new roles.",
+        "Ensure the Operations Departments meet all operational standards including: Scan & Activate, SIM compliance, claims compliance, SFS/BOPIS fulfillment, speed of checkout, supply ordering, known theft log, stockroom organization standards, cash handling, LP audits, etc.",
+        "Responsible for execution of the back-office procedures including: managing applicant flow, processing pre-hire/new-hire paperwork, ensuring I-9 compliance, processing background checks, processing terminations and final paycheck requests, processing personnel changes, preparing associate corrective actions, facilitating payroll/timekeeping changes, maintaining personnel files, attendance tracking and all state required personnel paperwork.", "Interview and make recommendations for hiring hourly teammates, including reviewing job applications to determine job fit and ensuring that teammates hired can meet the sales and operational aspects of their role. Handle teammate discipline (including issuing corrective action), appraisals, and performance matters. Make recommendations with respect to the termination and advancement of teammates."
       ]
     },
     {
@@ -181,9 +181,8 @@ const workExperiences = {
       date: "May 2021 – March 2022",
       desc: "",
       descBullets: [
-        "Used professional expertise to recommend teaching and learning content and create custom lesson plans for students of varying skill levels",
-        "Recommended appropriate GOLFTEC services for each student, including TECFIT Club Fitting, outdoor playing lessons, short game lessons, etc.",
-        "Documented each lesson given and published recaps to our online portal using GOLFTEC’s proprietary TECSWING teaching software"
+        "Increased Center Lessons Revenue by 18%, Increased Center Equipment Sales Revenue by 32%.",
+        "Used professional expertise to recommend teaching and learning content and create custom lesson plans for students of varying skill levels. Recommended appropriate GOLFTEC services for each student. Participated in continuing education to enhance skills (distance learning, seminars, etc.). "
       ]
     }
   ]
